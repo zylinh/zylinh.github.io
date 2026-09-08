@@ -22,9 +22,9 @@ The portrait area is intentionally blank. The local portrait and CV PDF are excl
 
 ## GitHub Pages
 
-Repository: https://github.com/zylinh/zylinh
+Repository: https://github.com/zylinh/zylinh.github.io
 
-Expected URL after Pages is enabled: https://zylinh.github.io/zylinh/
+Website: https://zylinh.github.io/
 
 Publish from the `main` branch, `/` (root), using **Settings → Pages → Deploy from a branch**. `.nojekyll` enables serving the static files directly.
 
@@ -36,4 +36,3 @@ git commit -m "Update academic homepage"
 git push origin main
 ```
 
-To use https://zylinh.github.io/ instead, GitHub requires a repository named `zylinh.github.io`.
