@@ -16,7 +16,6 @@ Open http://localhost:8000.
 
 - `index.html`: biography, research statement, and publication citations.
 - `style.css`: layout and responsive styles.
-- `assets/favicon.svg`: site icon.
 
 ## GitHub Pages
 

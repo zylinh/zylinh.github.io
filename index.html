@@ -9,32 +9,32 @@
   <meta property="og:title" content="Zhengyuan Lin | Computer Vision Research">
   <meta property="og:description" content="Social interaction understanding, interactive world models, 3D animation, and embodied AI. Master's student at UT-Vision, the University of Tokyo.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://zylinh.github.io/assets/avatar.jpg">
   <meta property="og:url" content="https://zylinh.github.io/">
   <link rel="canonical" href="https://zylinh.github.io/">
   <title>Zhengyuan Lin | Computer Vision Research</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:,">
+  <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=20261111o">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="wrap" aria-label="Main navigation">
-      <a class="site-name" href="#about">Zhengyuan Lin</a>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
       </div>
     </nav>
   </header>
   <main id="main" class="wrap">
-    <section id="about" class="intro no-portrait" aria-labelledby="name">
+    <section id="about" class="intro" aria-labelledby="name">
       <div class="intro-copy">
         <h1 id="name">Zhengyuan Lin <span lang="zh">林政源</span></h1>
         <p class="position">Master’s student · UT-Vision, The University of Tokyo</p>
-        <p>I am a master’s student in Information Science and Technology at the University of Tokyo, working in <a href="https://www.ut-vision.org/">UT-Vision</a> under the supervision of <a href="https://www.yusuke-sugano.info/">Prof. Yusuke Sugano</a>. I am also an AI research intern at <a href="https://alayalab.ai/">Alaya Lab</a>, working on interactive video world models and 3D/4D generation. I am applying for Ph.D. programs starting in Fall 2027.</p>
-        <p>Previously, I was a research assistant at the Hong Kong Polytechnic University, working with <a href="https://www.polyu.edu.hk/rcesga/people/rcesga-people/prof-guo-zhiling/?sc_lang=en">Prof. Zhiling Guo</a> in <a href="https://www.chokurei.net/">DigiEnergy Lab</a>. I received my bachelor’s degree in Computer Science and Technology from South China Normal University.</p>
+        <p>I am a master’s student in Information Science and Technology at the University of Tokyo, advised by <a href="https://www.yusuke-sugano.info/">Prof. Yusuke Sugano</a> at <a href="https://www.ut-vision.org/">UT-Vision</a>. I am also an AI research intern at <a href="https://alayalab.ai/">Alaya Lab</a>, mentored by <a href="https://kpzhang93.github.io/">Dr. Kaipeng Zhang</a>. I am applying for Ph.D. programs starting in Fall 2027.</p>
+        <p>Previously, I was a research assistant at the Hong Kong Polytechnic University, working with <a href="https://www.polyu.edu.hk/rcesga/people/rcesga-people/prof-guo-zhiling/?sc_lang=en">Prof. Zhiling Guo</a> in <a href="https://www.chokurei.net/">DigiEnergy Lab</a>.</p>
         <div class="profile-links" role="group" aria-label="Contact and academic profile">
           <a href="mailto:zylin@g.ecc.u-tokyo.ac.jp" aria-label="Email Zhengyuan Lin" title="Email: zylin@g.ecc.u-tokyo.ac.jp">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
@@ -52,108 +52,69 @@
           </a>
         </div>
       </div>
-    </section>
-
-    <section id="news" class="section" aria-labelledby="news-title">
-      <h2 id="news-title">News</h2>
-      <div class="section-body">
-        <ul class="news-list">
-          <li><time datetime="2026-08">Aug 2026</time><span>Released <a href="https://arxiv.org/abs/2608.15659">WorldRover</a>, a synthetic video data engine for world exploration (co-first author).</span></li>
-          <li><time datetime="2026-07">Jul 2026</time><span>Released the <a href="https://arxiv.org/abs/2607.18367">AlayaWorld</a> technical report on interactive long-horizon world modeling.</span></li>
-          <li><time datetime="2026-04">Apr 2026</time><span>Released <a href="https://arxiv.org/abs/2604.21686">WorldMark</a>, a unified benchmark for interactive video world models.</span></li>
-          <li><time datetime="2026-02">Feb 2026</time><span>Joined <a href="https://alayalab.ai/">Alaya Lab</a> as an AI research intern.</span></li>
-          <li><time datetime="2025-04">Apr 2025</time><span>Started my master’s program at the University of Tokyo.</span></li>
-        </ul>
-      </div>
+      <img class="portrait" src="assets/avatar.jpg?v=12" alt="Portrait of Zhengyuan Lin" width="400" height="400">
     </section>
 
     <section id="research" class="section" aria-labelledby="research-title">
       <h2 id="research-title">Research<br class="desktop-break"> Interests</h2>
       <div class="section-body">
-        <p>I am interested in <strong>intelligence that understands both the physical world and the human mind</strong>. My research so far has explored:</p>
+        <p>I am interested in <strong>intelligence that understands both the physical world and the human mind</strong>: models that can simulate how the world responds to actions, and read how people think and act. My current focus:</p>
         <ul class="research-list">
-          <li><strong>Social Interaction Understanding.</strong> How vision-language models interpret nonverbal cues such as gaze to infer human intent and mental states. I study attention misalignment in VLMs’ gaze understanding and am collecting a multi-view, multi-person social interaction dataset, since complementary viewpoints reveal cues a single view misses.</li>
-          <li><strong>Interactive Video World Models and 3D Animation.</strong> Data engines, benchmarks, and models for worlds that respond to actions, including synthetic exploration data with rich annotations (WorldRover) and action and memory evaluation (WorldMark), as well as agentic text-guided animation of diverse rigged 3D assets.</li>
-          <li><strong>Embodied AI.</strong> City-scale UAV vision-language navigation that grounds abstract human demands into destinations and executable flight plans.</li>
+          <li><h3 class="interest-title">Interactive Video World Models</h3><p>Video generation models that serve as world simulators, responding faithfully to actions and staying consistent with what they have shown over long horizons.</p></li>
+          <li><h3 class="interest-title">3D Animation Generation</h3><p>Generating controllable and editable animation for diverse rigged 3D assets, with agents that understand skeletal structure and plan motion.</p></li>
+          <li><h3 class="interest-title">Vision-Language Navigation</h3><p>Building embodied agents that ground human demands into concrete destinations and executable flight plans for UAVs in city-scale environments.</p></li>
+          <li><h3 class="interest-title">Social Interaction Understanding</h3><p>Enabling vision-language models to understand nonverbal cues such as gaze, infer people’s intentions and mental states, and anticipate their next actions in social interactions.</p></li>
         </ul>
+        <p class="research-earlier">Previously, I worked on <strong>generative AI for renewable energy</strong>, building synthetic datasets for solar panel segmentation.</p>
       </div>
     </section>
 
     <section id="publications" class="section publications" aria-labelledby="publications-title">
       <h2 id="publications-title">Publications</h2>
       <div class="section-body">
-      <p class="publication-note"><sup>*</sup> Equal contribution. See <a href="https://scholar.google.com/citations?user=nv9jIyIAAAAJ">Google Scholar</a> for the full list.</p>
-        <div class="publication-year">
-          <h3 class="year-label"><time datetime="2026">2026</time></h3>
-          <ol class="citation-list" aria-label="Publications from 2026">
-            <li class="paper">
-              <p class="citation">
-                <span class="citation-authors">Kang He, Wenshuo Peng, Chuanhao Li, Zihui Gao, Xiaojie Xu, <strong>Zhengyuan Lin</strong>, Yuzhe Ding, Donghong Ji, Kaipeng Zhang, Yongtao Ge (2026).</span>
-                <cite class="citation-title"><a href="https://arxiv.org/abs/2610.37257">GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling</a>.</cite>
-                <span class="citation-venue"><em>NeurIPS 2026</em>.</span> <span class="citation-links"><a href="https://arxiv.org/pdf/2610.37257">PDF</a></span>
-              </p>
-            </li>
-            <li class="paper">
-              <p class="citation">
-                <span class="citation-authors">Xiaojie Xu<sup>*</sup>, <strong>Zhengyuan Lin</strong><sup>*</sup>, Runyi Li, Yihao Liu, Kaipeng Zhang, Yongtao Ge (2026).</span>
-                <cite class="citation-title"><a href="https://arxiv.org/abs/2608.15659">WorldRover: A Scalable Synthetic Video Data Engine for World Exploration with Rich Annotations</a>.</cite>
-                <span class="citation-venue"><em>arXiv preprint</em>.</span> <span class="citation-links"><a href="https://arxiv.org/pdf/2608.15659">PDF</a></span>
-              </p>
-            </li>
-            <li class="paper">
-              <p class="citation">
-                <span class="citation-authors">AlayaWorld Team, including <strong>Zhengyuan Lin</strong> (2026).</span>
-                <cite class="citation-title"><a href="https://arxiv.org/abs/2607.18367">AlayaWorld: Interactive Long-Horizon World Modeling — Full Technical Report</a>.</cite>
-                <span class="citation-venue"><em>arXiv preprint</em>.</span> <span class="citation-links"><a href="https://arxiv.org/pdf/2607.18367">PDF</a><a href="https://arxiv.org/abs/2608.13492">v1.1</a></span>
-              </p>
-            </li>
-            <li class="paper">
-              <p class="citation">
-                <span class="citation-authors">AlayaWorld Team, including <strong>Zhengyuan Lin</strong> (2026).</span>
-                <cite class="citation-title"><a href="https://arxiv.org/abs/2607.06291">AlayaWorld: Long-Horizon and Playable Video World Generation</a>.</cite>
-                <span class="citation-venue"><em>arXiv preprint</em>.</span> <span class="citation-links"><a href="https://arxiv.org/pdf/2607.06291">PDF</a></span>
-              </p>
-            </li>
-            <li class="paper">
-              <p class="citation">
-                <span class="citation-authors">Xiaojie Xu, <strong>Zhengyuan Lin</strong>, Kang He, Yukang Feng, Xiaofeng Mao, Yuanyang Yin, Yongtao Ge, Kaipeng Zhang (2026).</span>
-                <cite class="citation-title"><a href="https://arxiv.org/abs/2604.21686">WorldMark: A Unified Benchmark Suite for Interactive Video World Models</a>.</cite>
-                <span class="citation-venue"><em>arXiv preprint</em>.</span> <span class="citation-links"><a href="https://arxiv.org/pdf/2604.21686">PDF</a></span>
-              </p>
-            </li>
-          </ol>
-        </div>
-        <div class="publication-year">
-          <h3 class="year-label"><time datetime="2024">2024</time></h3>
-          <ol class="citation-list" aria-label="Publications from 2024">
-            <li class="paper">
-              <p class="citation">
-                <span class="citation-authors">Hongjun Tan, Zhiling Guo, <strong>Zhengyuan Lin</strong>, Yuntian Chen, Dou Huang, Wei Yuan, Haoran Zhang, Jinyue Yan (2024).</span>
-                <cite class="citation-title"><a href="https://doi.org/10.1016/j.apenergy.2024.123554">General generative AI-based image augmentation method for robust rooftop PV segmentation</a>.</cite>
-                <span class="citation-venue"><em>Applied Energy</em>.</span>
-              </p>
-            </li>
-          </ol>
-        </div>
-        <div class="publication-year">
-          <h3 class="year-label"><time datetime="2023">2023</time></h3>
-          <ol class="citation-list" aria-label="Publications from 2023">
-            <li class="paper">
-              <p class="citation">
-                <span class="citation-authors">Zhiling Guo, Zhan Zhuang, Hongjun Tan, Zhengguang Liu, Peiran Li, <strong>Zhengyuan Lin</strong>, Wen-Long Shang, Haoran Zhang, Jinyue Yan (2023).</span>
-                <cite class="citation-title"><a href="https://doi.org/10.1016/j.renene.2023.119471">Accurate and generalizable photovoltaic panel segmentation using deep learning for imbalanced datasets</a>.</cite>
-                <span class="citation-venue"><em>Renewable Energy</em>.</span>
-              </p>
-            </li>
-            <li class="paper">
-              <p class="citation">
-                <span class="citation-authors"><strong>Zhengyuan Lin</strong>, Zhiling Guo, Dou Huang, Chenchen Song, Hongjun Tan, Xiaoya Song, Haoran Zhang, Jinyue Yan (2023).</span>
-                <cite class="citation-title"><a href="https://doi.org/10.46855/energy-proceedings-11182">Leveraging generative AI for renewable energy: Photovoltaic panel semantic segmentation case study</a>.</cite>
-                <span class="citation-venue"><em>Energy Proceedings</em>.</span>
-              </p>
-            </li>
-          </ol>
-        </div>
+        <p class="publication-note"><sup>*</sup> Equal contribution. See <a href="https://scholar.google.com/citations?user=nv9jIyIAAAAJ">Google Scholar</a> for the full list.</p>
+        <ol class="paper-list">
+          <li class="paper">
+            <a class="paper-thumb" href="https://alayalab.github.io/WorldRover/" tabindex="-1" aria-hidden="true"><img src="assets/papers/worldrover.jpg?v=12" alt="WorldRover dataset overview" loading="lazy"></a>
+            <div class="paper-body">
+              <h3 class="paper-title"><a href="https://arxiv.org/abs/2608.15659">WorldRover: A Scalable Synthetic Video Data Engine for World Exploration with Rich Annotations</a></h3>
+              <p class="paper-authors">Xiaojie Xu<sup>*</sup>, <strong>Zhengyuan Lin</strong><sup>*</sup>, Runyi Li, Yihao Liu, Kaipeng Zhang, Yongtao Ge</p>
+              <p class="paper-meta"><span class="paper-venue"><em>arXiv preprint</em>, 2026</span> <span class="paper-links"><a href="https://alayalab.github.io/WorldRover/">Website</a> <span class="link-sep" aria-hidden="true">/</span> <a href="https://arxiv.org/pdf/2608.15659">Paper</a> <span class="link-sep" aria-hidden="true">/</span> <a href="https://github.com/AlayaLab/WorldRover">Code</a></span></p>
+            </div>
+          </li>
+          <li class="paper">
+            <a class="paper-thumb" href="https://alaya-lab.github.io/AlayaWorld/" tabindex="-1" aria-hidden="true"><img src="assets/papers/alayaworld.jpg?v=10" alt="AlayaWorld generated worlds" loading="lazy"></a>
+            <div class="paper-body">
+              <h3 class="paper-title"><a href="https://arxiv.org/abs/2608.13492">AlayaWorld: Interactive Long-Horizon World Modeling — Full Technical Report</a></h3>
+              <p class="paper-authors">AlayaWorld Team, including <strong>Zhengyuan Lin</strong></p>
+              <p class="paper-meta"><span class="paper-venue"><em>arXiv preprint</em>, 2026</span> <span class="paper-links"><a href="https://alaya-lab.github.io/AlayaWorld/">Website</a> <span class="link-sep" aria-hidden="true">/</span> <a href="https://arxiv.org/pdf/2608.13492">Paper</a> <span class="link-sep" aria-hidden="true">/</span> <a href="https://github.com/AlayaLab/AlayaWorld">Code</a></span></p>
+            </div>
+          </li>
+          <li class="paper">
+            <a class="paper-thumb" href="https://alayalab.github.io/WorldMark/" tabindex="-1" aria-hidden="true"><img src="assets/papers/worldmark.jpg?v=10" alt="WorldMark evaluation pipeline" loading="lazy"></a>
+            <div class="paper-body">
+              <h3 class="paper-title"><a href="https://arxiv.org/abs/2604.21686">WorldMark: A Unified Benchmark Suite for Interactive Video World Models</a></h3>
+              <p class="paper-authors">Xiaojie Xu, <strong>Zhengyuan Lin</strong>, Kang He, Yukang Feng, Xiaofeng Mao, Yuanyang Yin, Yongtao Ge, Kaipeng Zhang</p>
+              <p class="paper-meta"><span class="paper-venue"><em>arXiv preprint</em>, 2026</span> <span class="paper-links"><a href="https://alayalab.github.io/WorldMark/">Website</a> <span class="link-sep" aria-hidden="true">/</span> <a href="https://arxiv.org/pdf/2604.21686">Paper</a> <span class="link-sep" aria-hidden="true">/</span> <a href="https://github.com/AlayaLab/WorldMark">Code</a></span></p>
+            </div>
+          </li>
+          <li class="paper">
+            <a class="paper-thumb" href="https://doi.org/10.1016/j.apenergy.2024.123554" tabindex="-1" aria-hidden="true"><img src="assets/papers/pv-augmentation.jpg?v=10" alt="Overview of the generative image augmentation method" loading="lazy"></a>
+            <div class="paper-body">
+              <h3 class="paper-title"><a href="https://doi.org/10.1016/j.apenergy.2024.123554">General generative AI-based image augmentation method for robust rooftop PV segmentation</a></h3>
+              <p class="paper-authors">Hongjun Tan, Zhiling Guo, <strong>Zhengyuan Lin</strong>, Yuntian Chen, Dou Huang, Wei Yuan, Haoran Zhang, Jinyue Yan</p>
+              <p class="paper-meta"><span class="paper-venue"><em>Applied Energy</em> (IF: 12.2), 368, 123554, 2024</span> <span class="paper-links"><a href="https://doi.org/10.1016/j.apenergy.2024.123554">Paper</a></span></p>
+            </div>
+          </li>
+          <li class="paper">
+            <a class="paper-thumb" href="https://doi.org/10.46855/energy-proceedings-11182" tabindex="-1" aria-hidden="true"><img src="assets/papers/pv-genai.jpg?v=10" alt="Synthetic PV images with cross-attention maps and masks" loading="lazy"></a>
+            <div class="paper-body">
+              <h3 class="paper-title"><a href="https://doi.org/10.46855/energy-proceedings-11182">Leveraging generative AI for renewable energy: Photovoltaic panel semantic segmentation case study</a></h3>
+              <p class="paper-authors"><strong>Zhengyuan Lin</strong>, Zhiling Guo, Dou Huang, Chenchen Song, Hongjun Tan, Xiaoya Song, Haoran Zhang, Jinyue Yan</p>
+              <p class="paper-meta"><span class="paper-venue"><em>Energy Proceedings</em>, 36, 2023</span> <span class="paper-links"><a href="https://doi.org/10.46855/energy-proceedings-11182">Paper</a></span></p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
