@@ -17,8 +17,7 @@ Open http://localhost:8000.
 - `index.html`: biography, research statement, and publication citations.
 - `style.css`: layout and responsive styles.
 - `assets/favicon.svg`: site icon.
-
-The portrait area is intentionally blank. The local portrait and CV PDF are excluded from Git because neither is used by the page.
+- `assets/Zhengyuan_Lin_CV.pdf`: CV linked from the nav bar and the profile links. This must be the PUBLIC build (`CV_Zhengyuan_Lin_public.pdf`, no manuscripts under review); the CV preview server in `E:\zylin_CV` copies it here automatically.
 
 ## GitHub Pages
 
@@ -31,7 +30,7 @@ Publish from the `main` branch, `/` (root), using **Settings → Pages → Deplo
 Future updates:
 
 ```sh
-git add index.html style.css assets/favicon.svg README.md .gitignore .nojekyll
+git add -A
 git commit -m "Update academic homepage"
 git push origin main
 ```
