@@ -17,7 +17,6 @@ Open http://localhost:8000.
 - `index.html`: biography, research statement, and publication citations.
 - `style.css`: layout and responsive styles.
 - `assets/favicon.svg`: site icon.
-- `assets/Zhengyuan_Lin_CV.pdf`: CV linked from the nav bar and the profile links. This must be the PUBLIC build (`CV_Zhengyuan_Lin_public.pdf`, no manuscripts under review); the CV preview server in `E:\zylin_CV` copies it here automatically.
 
 ## GitHub Pages
 
